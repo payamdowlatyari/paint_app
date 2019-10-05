@@ -1,0 +1,37 @@
+<head>
+  <title>1-wall</title>
+</head>
+
+<body>
+  {{> wall}}
+</body>
+
+<template name="wall">
+
+  <div class="container-fluid nav-c">
+
+    <h1>{{title}}</h1>
+    <button class='clear oth-b'><strong>
+        <h1>C</h1>
+      </strong></button>
+    <button class='thicker oth-b'><strong>
+        <h1>+</h1>
+      </strong></button>
+    <button class='thinner oth-b'><strong>
+        <h1>-</h1>
+      </strong></button>
+
+    <button class='red red-b'></button>
+    <button class='blue blu-b'></button>
+    <button class='green gre-b'></button>
+    <button class='black bla-b'></button>
+    <button class='white whi-b'></button>
+
+  </div>
+  {{> canvas}}
+
+</template>
+
+<template name="canvas">
+  <div id='canvas'></div>
+</template>
